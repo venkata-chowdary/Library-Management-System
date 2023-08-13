@@ -1,0 +1,10 @@
+<%- include('navbar-sidenav') -%>
+    <h2>Add Book</h2>
+    <form method="post" action="/addbook">
+        <input type="text" id="title" name="bookId" placeholder="Book ID">
+        <input type="text" id="author" name="bookTitle" placeholder="Book Title">
+        <input type="number" id="stock" name="bookStock" placeholder="Stock">
+        <input type="date" id="publication-date" name="publicationDate" placeholder="Publication Date">
+        <button type="submit">Add Book</button>
+      </form>
+<%- include('footer') -%>

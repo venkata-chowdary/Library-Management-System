@@ -1,0 +1,46 @@
+<%- include('navbar-sidenav') %>
+    <h2>Student Report</h2>
+    <div class="student-section-header">
+        <div class="student-details">
+            <% student.forEach(function(i){ %>
+                <h3>Student ID: <span><%= i.studentId %></span></h3>
+                <p>Student Name: <span><%= i.studentName %></span></p>
+                <p>Brach: <span><%= i.branch %></span></p>
+                <p>Contact Number: <span>9492092444</span></p>
+                <p>Books Taken: 
+                    <% i.booksTaken.forEach((j)=>{ %>
+                        <div class="booksTaken">
+                            <span><%= j.bookId %></span>
+                        </div>
+                    <% }) %>
+                </p>
+            <% }) %>
+            
+        </div>
+        <div>
+            <form class="searchBar" method="get" action="/studentreport">
+                <input class="search" placeholder="Search Student..." name="studentSearchId">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>        
+            </form>
+        </div>
+    </div>
+    <!-- <h1>Students List</h3> -->
+    <table style="margin-top: 0;">
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>Branch</th>
+            <th>Contact Number</th>
+        </tr>
+        <% students.forEach(function(i) { %>
+            <tr>
+                <td><%= i.studentId %></td>
+                <td style="width:500px;"><%= i.studentName %></td>
+                <td style="width:200px;"><%= i.branch %></td>
+                <td><%= i.studentContactNumber %></td>
+            </tr>
+        <% }); %>
+    </table>
+<%- include('footer') %>

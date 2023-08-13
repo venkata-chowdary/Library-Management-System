@@ -1,0 +1,23 @@
+<%-  include('navbar-sidenav') %>
+    <h2>Borrow Book</h2>
+    <form method="post" action="/borrowbook">
+        <input type="text" name="bookId" placeholder="Book ID">
+        <input type="text" name="studentId" placeholder="Student ID">
+        <button type="submit">Borrow Book</button>
+      </form>
+<div class="borrowed-books">
+    <table>
+        <tr>
+            <th>Book ID</th>
+            <th>Student ID</th>
+        </tr>
+        <% books.forEach(function(book) { %>
+            <tr>
+                <td><%= book.bookId %></td>               
+                <td><%= book.studentId %></td>
+            </tr>
+        <% }); %>
+    </table>
+
+</div>
+<%- include("footer") %>

@@ -1,0 +1,14 @@
+<%- include('navbar-sidenav') -%>
+    <h2>Add Student</h2>
+    <form id="add-student-form" method="post" action="/addstudent" >
+
+        <input type="text" id="student-name" name="studentName" placeholder="Student Name">
+        <input type="text" id="student-id" name="studentId" placeholder="Student ID">
+        <input type="text" id="student-id" name="branch" placeholder="Branch">
+        <input type="text" id="email" name="email" placeholder="Email">
+        <input type="tel" id="contact-number" name="contactNumber" placeholder="Contact Number">
+        
+        <button type="submit">Add Student</button>
+    </form>
+
+<%- include('footer') %>

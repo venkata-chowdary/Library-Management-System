@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="navBar">
+        <h1 class="brand">
+            <a href="/">
+                Academic<span> Library</span>
+            </a>
+        </h1>
+        <form class="searchBar" method="get" action="/search">
+                <input class="search" placeholder="Search Book..." name="bookSearch">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>        
+        </form>
+        <a href="/">Home</a>
+        <a href="/">Featured Books</a>
+        <a href="/">New Arrivals</a>
+        <!-- <a href="login.html" class="logIn">LogIn | SignUp</a> -->
+    </div>
+
+
+    <div class="hero-section">
+        <div class="side-navBar">
+            <h3 class="category-btn">Categories</h3>
+            <ul class="category-list active">
+                <li><a href="#">All Books</a></li>
+                <li><a href="#">Fiction Books</a></li>
+                <li><a href="#">Exam Preparation</a></li>
+                <li><a href="#">Children's Books</a></li>
+                <li><a href="#">Exam Central</a></li>
+                <li><a href="#">Textbooks</a></li>
+                <li><a href="#">Science</a></li>
+            </ul>
+            <h3><a href="/addbook" class="scroll-link">Add Book</a></h3>
+            <h3><a href="/addstudent" class="scroll-link">Add Student</a></h3>
+            <h3><a href="/borrowbook" class="scroll-link">Borrow Book</a></h3>
+            <h3><a href="/returnbook" class="scroll-link">Return Book</a></h3>
+            
+            <h3><a href="/studentreport" class="scroll-link">Student Report</a></h3>
+            <h3><a href="/">Notifications</a></h3>
+
+            <!-- <div class="social-media">
+                <a href="https://www.linkedin.com/in/venkata-chowdary-immanni-95527723a/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/venkata-chowdary-immanni-95527723a/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/venkata-chowdary-immanni-95527723a/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/venkata-chowdary-immanni-95527723a/"><i class="fa-brands fa-linkedin"></i></a>
+            </div> -->
+        </div>
+    </div>
+    <div class="entry-section">
+        <!-- all the other sections will come here -->

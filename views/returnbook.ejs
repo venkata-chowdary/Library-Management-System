@@ -1,0 +1,8 @@
+<%- include('navbar-sidenav') %>
+    <h2>Return Book</h2>
+    <form method="post" action="/returnbook">
+        <input type="text" name="bookId" placeholder="Book ID">
+        <input type="text" name="studentId" placeholder="Student ID">
+        <button type="submit">Return Book</button>
+      </form>
+<%- include('footer') %>

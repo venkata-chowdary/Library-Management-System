@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-blue:#111827;
+    --primary-yellow:#eab308;
+    --secondary-blue:#94a3b8;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+body{
+    background-color: var(--secondary-blue);
+
+}
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--primary-blue);
+    padding: 10px 40px; 
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.navBar a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    
+}
+
+.navBar a:hover{
+    color: var(--primary-yellow);
+    transition: 0.4s all ease-in-out;
+}
+
+
+.brand a{
+    color: white;
+    cursor: pointer;
+    font-size: 32px;
+
+}
+
+.brand a:hover{
+    color: #fff;
+}
+.brand span{
+    color: var(--primary-yellow);
+}
+
+.searchBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:0;
+}
+
+.searchBar input{
+    padding: 6px 8px;
+    border-radius: 12px 0 0 12px;
+    border: 0;
+    width: fit-content;
+}
+
+.searchBar input:focus{
+    outline: 0;
+}
+
+.searchBar i{
+    font-size: 16px;  
+
+}
+
+
+/**Side navbar*/
+  
+.side-navBar{
+    width: 200px;
+    height:100vh;
+    background-color: var(--primary-blue);
+    display: flex;
+    gap: 20px;
+    align-items:flex-start;
+    flex-direction: column;
+    color: white;
+    padding: 0 12px;
+    padding-top: 100px;
+    position: fixed;
+
+}
+
+.side-navBar h3 a ,.side-navBar h3{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    margin:0 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.side-navBar h3 a:hover,.side-navBar ul a:hover,.side-navBar h3:hover{
+    color: var(--primary-yellow);
+    transition: 0.4s all ease-in-out;
+}
+.category-list {
+    list-style-type: none;
+    margin-left: 36px;
+}
+/* .category-list-display{
+    transition: 0.3ms all ease-in-out;
+
+} */
+.side-navBar ul li{
+    margin: 8px 0;
+}
+.side-navBar ul a{
+    text-decoration:none;
+    color:white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*main section*/
+
+.entry-section{
+    margin-left: 200px;
+    padding: 40px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 86%;
+}
+
+.entry-section h2{
+    color: var(--primary-blue);
+    font-size: 30px;
+    font-weight: 550;
+    margin-bottom: 36px;
+}
+
+.entry-section h3{
+    color: var(--primary-blue);
+    font-size: 26px;
+    font-weight: 550;
+}
+section{
+    width: 90%;
+    background-color: red;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+form input,form button{
+    min-width: 400px;
+    padding: 14px;
+    border-radius: 26px;
+    border: 0px solid ;
+    font-size: 16px;
+    font-weight: 450;
+}
+
+form input:focus{
+    outline: 0;
+}
+
+form button{
+    min-width: 200px;
+    background-color: var(--primary-yellow);
+    color: var(--primary-blue); 
+    cursor: pointer;   
+    border: 2px solid var(--primary-blue);
+}
+
+form button:hover{
+    transition: 0.25s all ease-in-out;
+    background-color: var(--primary-blue);
+    color: var(--primary-yellow);
+    border: 2px solid var(--primary-yellow);
+}
+
+
+.student-section-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    height: 180px;
+
+}
+.student-details{
+    width: fit-content;
+}
+.student-section-header .searchBar{
+    width: fit-content;
+}
+
+.student-details{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight:700;
+}
+
+.student-details span{
+    font-weight: 500;
+    margin-left: 2px;
+}
+.booksTaken{
+    position: relative;
+    left: 120px;
+    bottom: 30px;
+    width: fit-content;
+
+}
+.searchBar button{
+    padding: 10px 8px;
+    min-width: 36px;
+    max-width: 10px;
+    background-color: var(--primary-yellow);
+    border-radius: 0 12px 12px 0 ;
+    border:0;
+}
+
+.searchBar button:hover{
+    background-color: var(--primary-blue);
+    border: 0;
+
+}
+
+table{
+    border-collapse: collapse; 
+    width: 100%;
+    margin: 18px auto 40px;
+}
+tr{
+    border-bottom: 1px solid #ccc;
+    font-size:20px;
+    text-align:left;
+}
+
+th{
+    padding-bottom: 12px;
+}
+td{
+    font-size: 18px;
+    padding: 8px;
+}
+
+
